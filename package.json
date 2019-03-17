@@ -1,0 +1,18 @@
+{
+  "name": "cafelife",
+  "version": "1.0.0",
+  "description": "Cafe life app with Express, Prisma and React",
+  "repository": "https://github.com/junngo/cafelife.git",
+  "author": "junngo <myeongjun.ko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
