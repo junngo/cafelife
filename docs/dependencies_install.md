@@ -13,3 +13,11 @@ yarn add dotenv
 yarn add morgan
 yarn add graphql-tools merge-graphql-schemas
 ```
+
+### Install Prisma
+```
+yarn global add prisma
+prisma login -k [tag]
+prisma init
+prisma deploy
+```
