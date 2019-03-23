@@ -20,4 +20,5 @@ yarn global add prisma
 prisma login -k [tag]
 prisma init
 prisma deploy
+yarn add prisma-client-lib
 ```
