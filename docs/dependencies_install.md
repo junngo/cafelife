@@ -22,3 +22,9 @@ prisma init
 prisma deploy
 yarn add prisma-client-lib
 ```
+
+### requestSecret for mail
+```
+yarn add nodemailer
+yarn add nodemailer-sendgrid-transport
+```
