@@ -28,3 +28,8 @@ yarn add prisma-client-lib
 yarn add nodemailer
 yarn add nodemailer-sendgrid-transport
 ```
+
+### Install JWT lib
+```
+yarn add passport-jwt
+```
