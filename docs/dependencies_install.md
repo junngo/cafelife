@@ -31,5 +31,6 @@ yarn add nodemailer-sendgrid-transport
 
 ### Install JWT lib
 ```
-yarn add passport-jwt
+yarn add passport-jwt passport
+yarn add jsonwebtoken
 ```
