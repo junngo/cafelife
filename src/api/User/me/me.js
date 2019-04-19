@@ -1,6 +1,5 @@
 import { prisma } from "../../../../generated/prisma-client"
 
-
 export default {
     Query: {
         me: async (_, __, { request, isAuthenticated }) => {
@@ -14,6 +13,11 @@ export default {
                 user: userProfile,
                 posts
             };
+        }
+    },
+    User: {
+        fullName: parent => {
+            return `${parent.username} ${parent.name}`;
         }
     }
 };

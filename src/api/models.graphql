@@ -3,6 +3,8 @@ type User {
   username: String!
   email: String!
   name: String
+  fullName: String
+  amIFollowing: Boolean!
   bio: String
   following: [User!]!
   followers: [User!]!
@@ -11,6 +13,7 @@ type User {
   comments: [Comment!]!
   chats: [Chat!]!
   loginSecret: String
+  isLiked: Boolean!
 }
 
 type Post {
@@ -57,6 +60,6 @@ type Message {
 }
 
 type UserProfile {
-  user: User!
+  user: User
   posts: [Post!]!
 }
