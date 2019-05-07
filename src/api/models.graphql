@@ -15,6 +15,7 @@ type User {
   chats: [Chat!]!
   loginSecret: String
   isLiked: Boolean!
+  rooms: [Room!]!
 }
 
 type Post {
@@ -47,6 +48,14 @@ type File {
   post: Post!
 }
 
+type Room {
+  id: ID!
+  participants: [User!]!
+  messages: [Message!]!
+  createdAt: String
+  updatedAt: String
+}
+
 type Chat {
   id: ID!
   participants: [User!]!
@@ -59,6 +68,7 @@ type Message {
   from: User!
   to: User!
   chat: Chat!
+  room: Room!
 }
 
 type UserProfile {
