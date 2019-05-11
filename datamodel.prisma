@@ -11,6 +11,7 @@ type User {
   comments: [Comment!]! @relation(name: "CommentsOfUser", onDelete: CASCADE)
   chats: [Chat!]!
   loginSecret: String
+  avatar: String
 }
 
 type Post {

@@ -16,6 +16,7 @@ type User {
   loginSecret: String
   isLiked: Boolean!
   rooms: [Room!]!
+  avatar: String
 }
 
 type Post {
