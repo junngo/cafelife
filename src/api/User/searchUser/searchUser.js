@@ -7,7 +7,7 @@ export default {
         where: {
           OR: [
                 { username_contains: args.term },
-                { name: args.term }
+                { lastName: args.term }
               ]
           }
       })
