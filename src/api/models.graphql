@@ -4,6 +4,8 @@ type User {
   email: String!
   firstName: String
   lastName: String
+  fullName: String
+  amIFollowing: Boolean!
   isFollowing: Boolean!
   isSelf: Boolean!
   bio: String

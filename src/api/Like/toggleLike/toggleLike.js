@@ -28,7 +28,7 @@ export default {
 
                 if (existingLike) {
                     await prisma.deleteManyLikes(filterOptions);
-                    
+
                 } else {
                     await prisma.createLike({
                         user: {
@@ -45,6 +45,7 @@ export default {
                 }
 
                 return true;
+                
             } catch {
                 return false;
             }

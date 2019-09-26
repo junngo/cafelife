@@ -19,11 +19,10 @@ export default {
                         }
                     }
                 });
-
-            return true;
+                return true;
             
             } catch {
-            return false;
+                return false;
             }
         }
     }
