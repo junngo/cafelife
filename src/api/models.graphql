@@ -5,7 +5,6 @@ type User {
   firstName: String
   lastName: String
   fullName: String
-  amIFollowing: Boolean!
   isFollowing: Boolean!
   isSelf: Boolean!
   bio: String
@@ -30,6 +29,7 @@ type Post {
   likes: [Like!]!
   comments: [Comment!]!
   isLiked: Boolean!
+  likeCount: Int!
 }
 
 type Like {
