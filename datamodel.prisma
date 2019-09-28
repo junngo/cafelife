@@ -10,7 +10,7 @@ type User {
   posts: [Post!]! @relation(name: "PostsOfUser", onDelete: CASCADE)
   likes: [Like!]! @relation(name: "LikesOfUser", onDelete: CASCADE)
   comments: [Comment!]! @relation(name: "CommentsOfUser", onDelete: CASCADE)
-  chats: [Chat!]!
+  rooms: [Room!]!
   loginSecret: String
   avatar: String
   updatedAt: DateTime! @updatedAt
@@ -54,10 +54,10 @@ type File {
   createdAt: DateTime! @createdAt
 }
 
-type Chat {
+type Room {
   id: ID! @id
   participants: [User!]!
-  message: [Message!]!
+  messages: [Message!]!
   updatedAt: DateTime! @updatedAt
   createdAt: DateTime! @createdAt
 }
@@ -67,7 +67,7 @@ type Message {
   text: String!
   from: User! @relation(name: "From")
   to: User! @relation(name: "To")
-  chat: Chat!
+  room: Room!
   updatedAt: DateTime! @updatedAt
   createdAt: DateTime! @createdAt
 }

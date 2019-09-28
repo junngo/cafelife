@@ -13,10 +13,9 @@ type User {
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
-  chats: [Chat!]!
+  rooms: [Room!]!
   loginSecret: String
   isLiked: Boolean!
-  rooms: [Room!]!
   avatar: String
 }
 
@@ -59,18 +58,11 @@ type Room {
   updatedAt: String
 }
 
-type Chat {
-  id: ID!
-  participants: [User!]!
-  message: [Message!]!
-}
-
 type Message {
   id: ID!
   text: String!
   from: User!
   to: User!
-  chat: Chat!
   room: Room!
 }
 
